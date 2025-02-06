@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pedidos Recebidos</title>
+</head>
+<body>
+    <h1>Lista de Pedidos</h1>
+    {% for pedido in pedidos %}
+        <p>{{ pedido['quantidade'] }} {{ pedido['lanche'] }}(s) para {{ pedido['nome'] }}.</p>
+    {% endfor %}
+</body>
+</html>
